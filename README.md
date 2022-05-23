@@ -7,3 +7,8 @@ git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1
 ```bash
 git stash --include-untracked
 ```
+
+### Revenir à l'état d'une branche remote (supprimer les commits locaux)
+```bash
+git reset --hard origin/<branch_name>
+```
