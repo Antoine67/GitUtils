@@ -12,3 +12,13 @@ git stash --include-untracked
 ```bash
 git reset --hard origin/<branch_name>
 ```
+
+### Abandonner une merge et revenir à l'état initial
+```bash
+git reset --merge
+```
+ou 
+
+```bash
+git merge --abort
+```
